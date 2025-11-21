@@ -1,0 +1,28 @@
+File f;
+f.LoadFile(jfsdjkhfjks);
+f.Read(buf, 50);
+buf
+f.Read(buf, 10);
+f.Close();
+
+
+File f;
+f.Create("jfsdjkhfjks);
+f.Write(buf, 50);
+f.Write(buf, 10);
+f.Close();
+
+
+Encodage :
+
+1. Magic number défini à l'avance. (2 octets = 4 pixels cf. schéma)
+2. Taille du message / taille occupé en mémoire par le message max défini à l'avance. (2 octets = 4 pixels = 12 + 4 (rouge = 2 bits = 16 bits de couleurs).
+3. Message (tableau de caractere : 1 octet/caractere = 2 pixels = 6 + 2 = 8 bits).
+
+Décodage : 
+
+1. Vérif magic number en comparant celui défini dans les premiers pixels.
+2. Récup taille du message en utilisant la taille occup en mémoire sur les pixels suivants.
+3. Lecture message tous les autres pixels jusqu'à taille.
+
+PS : 2 pixels pour 1 octet (8 bits : 2 pixels = (1 bit bleu + 1 bit vert + 2 bits rouges) * 2)

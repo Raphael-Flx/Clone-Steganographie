@@ -1,0 +1,21 @@
+{
+    "projects": {
+        "Steganographie": {
+            "additionalDependencies": [],
+            "additionalIncludeDirectories": [],
+            "additionalLibraryDirectories": [],
+            "dependencies": [],
+            "dependents": [],
+            "guid": "1C1D0DDD-6CC7-65FB-6138-00E75BD7127D",
+            "lib": false,
+            "pch": false,
+            "preprocessorDefinitions": [],
+            "vcpkg": false,
+            "window": true
+        }
+    },
+    "solution_guid": "0F531B68-3C1E-078D-6737-6245432D09B1",
+    "solution_name": "Projet4",
+    "startup_project": "Steganographie",
+    "version": "1.17.4"
+}
